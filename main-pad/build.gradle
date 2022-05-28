@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+}
+apply from :"../view.gradle"
+android{
+
+
+}
+dependencies {
+    implementation project(path: ':base-common')
+    implementation project(path: ':base-view')
+}

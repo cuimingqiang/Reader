@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+enableFeaturePreview('VERSION_CATALOGS')
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+    versionCatalogs {
+        libs {
+            from(files("libs.versions.toml"))
+        }
+        testLibs {
+            from(files('test-libs.versions.toml'))
+        }
+    }
+}
+rootProject.name = "Reader"
+include ':app'
+include ':base-view'
+include ':base-common'
+include ':main-pad'
