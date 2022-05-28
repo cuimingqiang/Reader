@@ -11,13 +11,9 @@ android {
     defaultConfig {
         minSdk min_sdk
         targetSdk target_sdk
-        versionCode version_code
-        versionName version_name
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+
     }
 
     buildTypes {
@@ -51,7 +47,6 @@ dependencies {
     implementation libs.bundles.common
 
     kapt libs.hilt.android.compile
-    kapt libs.glide.compile
 
     testImplementation testLibs.bundles.test
     androidTestImplementation testLibs.bundles.android
