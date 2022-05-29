@@ -46,7 +46,6 @@ dependencies {
 
 
     kapt libs.hilt.android.compile
-    kapt libs.glide.compile
 
     testImplementation testLibs.bundles.test
     androidTestImplementation testLibs.bundles.android

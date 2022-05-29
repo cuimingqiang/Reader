@@ -54,4 +54,8 @@ dependencies {
 
     implementation libs.hilt.android
     kapt libs.hilt.android.compile
+
+    testImplementation testLibs.bundles.test
+    androidTestImplementation testLibs.bundles.android
+    debugImplementation testLibs.bundles.debug
 }
